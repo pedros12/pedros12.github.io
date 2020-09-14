@@ -295,7 +295,7 @@ https://templatemo.com/tm-553-xtra-blog
             if (velocidadeDesejada < 0){
               alert("A velocidade não pode ser menor que 0");
             } else{
-              var resultado =  (velocidadeDesejada - 185.3 + cte -parseInt(document.getElementById("level_velocidade_adicional").value))/velocidade;
+              var resultado =  (velocidadeDesejada - (109 * velocidade) + cte -parseInt(document.getElementById("level_velocidade_adicional").value))/velocidade;
               document.getElementById("level_resultado_info").textContent = Math.round(resultado);
             }
           }
